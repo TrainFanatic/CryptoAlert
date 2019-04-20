@@ -35,16 +35,17 @@ echo "Paste your API Key from Coinmarketcap"
 read -s apiKey
 clear
 cat << eol
-There are different ways to input data for fetching in CryptoAlert. There is:
-The ID (1 for Bitcoin, 2 for Litecoin etc.)
-The symbol (BTC for Bitcoin, ETH for Ethereum)
-The slug (bitcoin for Bitcoin, ethereum for Ethereum)
-IMPORTANT: The slug MUST be lowercase at ALL TIMES
+There is only one way to input data for fetching in CryptoAlert.
+Input either Bitcoin, Ethereum, or Cosmos
 eol
 read -p "What cryptocurrency do you want to view? ~" crypto_name
+case $crypto_name in
+Bitcoin) crypto_name=1 ;;
+Ethereum) crypto_name=1027 ;;
+Cosmos) crypto_name=3794 ;;
 clear
-read -p "Did you use an ID, a symbol, or a slug? ~" input_type
-curl -H "X-CMC_PRO_API_KEY:  $apiKey" -H "Accept: application/json" -G https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?$input_type=$crypto_name | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d"
+#read -p "Did you use an ID, a symbol, or a slug? ~" input_type #not needed (all is ID)
+curl -H "X-CMC_PRO_API_KEY:  $apiKey" -H "Accept: application/json" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=$crypto_name | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d"
 
 fi
 #if ! (-e $(dirname $0)/Key)
