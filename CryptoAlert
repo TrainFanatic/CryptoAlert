@@ -26,7 +26,7 @@ esac
 echo "Do you have a Coinmarketcap API Key? (y/n)"
 is_api_present
 clear
-if $api_id_presence="no"
+if $api_id_presence=="no"
 then
 echo "Open https://coinmarketcap.com/api/pricing/ (right-click the link and click Open URL) and choose the plan of your choice"
 else
