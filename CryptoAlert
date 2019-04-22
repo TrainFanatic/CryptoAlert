@@ -10,10 +10,13 @@ n) api_id_presence=no ;;
 *) clear; echo "Your input was neither y or n. Please try again"; api_id_ask ;;
 esac
 }
+
 #This asks for the plan the user has (if user does have one). Please Add later
 #function what_api_plan {
 #read api_plan
 #}
+
+#"Would you like CryptoAlert to save you Coinmarketcap API Key?" This is not used yet
 function is_save_key {
 read -n1 -p "Would you like CryptoAlert to save you Coinmarketcap API Key? (y/n)" save_key
 case $save_key in
@@ -22,28 +25,32 @@ n) ;;
 *) echo "You didn't input y or n, try again"; is_save_key ;;
 esac
 }
+
 #Code starts here
-echo "Do you have a Coinmarketcap API Key? (y/n)"
-is_api_present
+echo "Do you have a Coinmarketcap API Key? (y/n)" #Asks for API Key
+is_api_present #Does the iser have an IDKey?
 clear
 if $api_id_presence=="no"
 then
-echo "Open https://coinmarketcap.com/api/pricing/ (right-click the link and click Open URL) and choose the plan of your choice"
+echo "Open https://coinmarketcap.com/api/pricing/ (right-click the link and click Open URL) and choose the plan of your choice" #Points user to where to get an APIKey
 else
 #Later, add max checks/hr based on plan
 echo "Paste your API Key from Coinmarketcap"
-read -s apiKey
+read -s apiKey #It has a key!
 clear
-cat << eol
+
+cat << eol #Prints till "eol"
 There is only one way to input data for fetching in CryptoAlert.
 Input either Bitcoin, Ethereum, or Cosmos
 eol
+
 read -p "What cryptocurrency do you want to view? ~" crypto_name
 case $crypto_name in
 Bitcoin) crypto_name=1 ;;
 Ethereum) crypto_name=1027 ;;
 Cosmos) crypto_name=3794 ;;
 esac
+
 clear
 #read -p "Did you use an ID, a symbol, or a slug? ~" input_type #not needed (all is ID)
 curl -H "X-CMC_PRO_API_KEY:  $apiKey" -H "Accept: application/json" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=$crypto_name | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d"
