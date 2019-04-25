@@ -6,8 +6,13 @@ while $found != "yes"
 do
 find_name=$(cat $cryptolist_address | head -$linenumber | tail -1)
 #If the filtered variable $findname has $crypto_name (which is from the main CryptoAlert executable) then fetch id
-if $(echo $findname | grep $crypto_name) == $crypto_name
+if $(echo $find_name | grep $crypto_name) != ""
 then
 found="yes"
-idplace=$(expr "$linenumber"+1)
-cat $cryptolist_address | head -"$idplace"
+idplace=$(expr "$linenumber"-1)
+crypto_name=$(cat $cryptolist_address | sed s/\"//g | sed s/i// | sed s/d// | sed s/,// | sed s/://) " #removes characters " i d , and :
+echo "The id is ""$crypto_name"
+else
+find_name=$(expr "$find_name"+1)
+fi
+done
