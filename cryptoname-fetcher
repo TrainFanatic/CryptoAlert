@@ -2,11 +2,11 @@
 curdir=$(dirname $0)
 cryptolist_address="$curdir""/Dependencies/cryptolist-filtered"
 linenumber=1
-while ($found != "yes")
+while [$found != "yes"]
 do
 find_name=$(cat $cryptolist_address | head -$linenumber | tail -1)
 #If the filtered variable $findname has $crypto_name (which is from the main CryptoAlert executable) then fetch id
-if $(echo $find_name | grep $crypto_name) != ""
+if [$(echo $find_name | grep $crypto_name) != ""]
 then
 found="yes"
 idplace=$(expr "$linenumber"-1)
