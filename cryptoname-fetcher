@@ -10,7 +10,7 @@ if $(echo $find_name | grep $crypto_name) != ""
 then
 found="yes"
 idplace=$(expr "$linenumber"-1)
-crypto_name=$(cat $cryptolist_address | sed s/\"//g | sed s/i// | sed s/d// | sed s/,// | sed s/://) " #removes characters " i d , and : and updates variable crypto_name (in main CryptoAlert executable)
+crypto_name=$(cat $cryptolist_address | sed s/\"//g | sed s/i// | sed s/d// | sed s/,// | sed s/://) " #removes characters " i d , and : and updates variable crypto_name in main CryptoAlert executable
 echo "The id is ""$crypto_name"
 else
 find_name=$(expr "$find_name"+1)
