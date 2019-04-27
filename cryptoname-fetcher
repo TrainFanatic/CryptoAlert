@@ -1,18 +1,38 @@
 #!/bin/bash
+function diagnostics {
+cat $cryptolist_address | head -$linenumber | tail -1
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a//
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m//
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m//
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m// | sed s/e//
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m// | sed s/e// | sed s/://g
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m// | sed s/e// | sed s/://g | sed s/,//g
+cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m// | sed s/e// | sed s/://g | sed s/,//g | sed s/\ //g
+echo $(cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m// | sed s/e// | sed s/://g | sed s/,//g | sed s/\ //g ) is equal to $crypto_name
+}
+nothing="" #Used to compare against result
+crypto_name=$1 #assigns 1st spot to var crypto_name
+found=false
 curdir=$(dirname $0)
 cryptolist_address="$curdir""/Dependencies/cryptolist-filtered"
 linenumber=1
-while [$found != "yes"]
+echo "Searching for $crypto_name"
+while [ $found != true ]
 do
 find_name=$(cat $cryptolist_address | head -$linenumber | tail -1)
 #If the filtered variable $findname has $crypto_name (which is from the main CryptoAlert executable) then fetch id
-if [$(echo $find_name | grep $crypto_name) != ""]
+diagnostics
+if  [ '$(cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name)' -a '$(cat $cryptolist_address | head -$linenumber | tail -1 | grep $crypto_name | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/m// | sed s/e// | sed s/://g | sed s/,//g | sed s/\ //g)' == '$crypto_name' ]
 then
-found="yes"
+echo "found"
+found=true
 idplace=$(expr "$linenumber"-1)
-crypto_name=$(cat $cryptolist_address | sed s/\"//g | sed s/i// | sed s/d// | sed s/,// | sed s/://) " #removes characters " i d , and : and updates variable crypto_name in main CryptoAlert executable
-echo "The id is ""$crypto_name"
+crypto_name=$(cat $cryptolist_address | head -$idplace | tail -1 | grep $crypto_name | sed s/\"//g | sed s/i// | sed s/d// | sed s/://g | sed s/,//g | sed s/\ //g)  #removes characters the characters inbetween the forward slashes eg i or d
+echo The id is $crypto_name
 else
-find_name=$(expr "$find_name"+1)
+linenumber=$(expr "$linenumber" + 1)
+echo "Not found"
 fi
 done
