@@ -1,4 +1,4 @@
 #!/bin/bash
 curdir=$(dirname $0)
 filt5="$curdir""/Dependencies/filtered5"
-cat $filt5 | grep $1 | cut -d: -f1
+cat $filt5 | grep -w $1 | cut -d: -f1
