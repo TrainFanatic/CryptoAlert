@@ -1,0 +1,13 @@
+#!/bin/bash
+cryptolistaddress="$(dirname $0)""/Dependencies/filtered2"
+line_number=1
+touch "$(dirname $0)""/Dependencies/id-name"
+while [ $line_number -le 6827 ]
+do
+idnumber=$(cat $cryptolistaddress | head -$line_number | tail -1 | sed s/\"//g | sed s/://g | sed s/,//g | sed s/\ //g | sed s/i//g | sed s/d//g)    #removes patterns
+linenumber=$(expr $line_number + 1)
+name=$(cat $cryptolistaddress | head -$line_number | tail -1 | sed s/\"//g | sed s/n// | sed s/a// | sed s/m// | sed s/e// | sed s/://g | sed s/,// | sed s/\ //g )
+echo $name
+
+line_number=$(expr $line_number + 1)
+done
