@@ -1,0 +1,24 @@
+NOTE 1: USING THE PASTE UTITLITY TO MAKE LIFE EASIER
+Here are some notes:
+Using the `paste' ability, I was able to turn file filtered3 into file filtered5
+It turns the file containing the series of:
+
+	id
+	name
+
+into:
+
+	id:name
+
+This is extremely helpful because it is hard to find a way to call id and name as pair in the first format, while in the second format, you can do it by simply doing `cat file |  cut -d: -f$i' where $i is 1 for id and 2 for name
+This was done by doing:
+
+	cat filtered3 | paste -d ':' - - > filtered5
+
+The file filtered4 was made sheepishly (and sort of dumbly) by doing these two commands
+
+	cat filtered3 | paste -d ' ' - - > filtered4
+	cat filtered4 | tr ' ' ':' > filtered5
+or similarly, instead of doing the second command (cat | tr)
+	tr ' ' ':' < filtered4 > filtered5
+
