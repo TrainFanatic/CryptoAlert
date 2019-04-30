@@ -1,6 +1,9 @@
 #!/bin/sh
 #This is CryptoAlert. It gives you the info of cryptocurrencies. Look at README.md for info
 #Defining repeating functions (repeats if input not in correct format)
+#Define variables
+curdir=$(dirname $0)
+no_api_id_presence=false
 #This asks whether the user has a Coinmarketcap API ID
 function is_api_present {
 read -sn1 api_id_input
@@ -18,26 +21,42 @@ esac
 
 #"Would you like CryptoAlert to save you Coinmarketcap API Key?" This is not used yet
 function is_save_key {
-read -n1 -p "Would you like CryptoAlert to save you Coinmarketcap API Key? (y/n)" save_key
+read -n1 -p "It appears that you have not saved your API Key. Would you like CryptoAlert to save your Coinmarketcap API Key? (y/n)" save_key
 case $save_key in
-y) touch $(dirname $0)/Key; echo $apiKey > $(dirname $0)/Key ;;
+y) touch "$(dirname $0)""/.Key"; echo $apiKey > "$(dirname $0)""/.Key" ;;
 n) ;;
 *) echo "You didn't input y or n, try again"; is_save_key ;;
 esac
 }
-
+#Detects apiKey, asks if want to use stored data
+function autofill_key {
+read -n1 -p "Your API Key is stored in CryptoAlert's Data. Would you like CryptoAlert to AutoFill the API Key for you? (y/n)" auto_fill
+case $auto_fill in
+y) apiKey=$(cat "$curdir""/.Key") ;;
+n) echo "OK" ;;
+*) echo "You didn't input y or n, try again"; autofill_key ;;
+esac
+}
 #Code starts here
+if [ -e "$(dirname $0)""/.Key" ]
+then
+autofill_key
+else
 echo "Do you have a Coinmarketcap API Key? (y/n)" #Asks for API Key
-is_api_present #Does the iser have an IDKey?
+is_api_present #Does the user have an IDKey?
+fi
 clear
 if $no_api_id_presence; then
 echo "Open https://coinmarketcap.com/api/pricing/ (right-click the link and click Open URL) and choose the plan of your choice" #Points user to where to get an APIKey
-else
+exit 0
+fi
 #Later, add max checks/hr based on plan
+if [ "$auto_fill" != "y" ]
+then
 echo "Paste your API Key from Coinmarketcap"
 read -s apiKey #It has a key!
+fi
 clear
-
 cat << eol #Prints till "eol"
 There is only one way to input data for fetching in CryptoAlert.
 Input either Bitcoin, Ethereum, or Cosmos
@@ -50,9 +69,9 @@ clear
 #read -p "Did you use an ID, a symbol, or a slug? ~" input_type #not needed (all is ID)
 curl -H "X-CMC_PRO_API_KEY:  $apiKey" -H "Accept: application/json" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=$crypto_name | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d\|credit_count" 2>/dev/null
 
+
+if ! [ -e "$(dirname $0)""/.Key" ]
+then
+is_save_key
 fi
-#if ! (-e $(dirname $0)/Key)
-#then
-#is_save_key
-#fi
 
