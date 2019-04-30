@@ -1,0 +1,9 @@
+NOTE:
+This is a list of old executables. They are here for the sole purpose of keepsake just in case someone (a curious one, in fact) decides to tinker with the original.
+The original(CryptoAlert-1) works like this:
+	Have an API Key? (y/n)
+	Enter API Key
+	Choose between Bitcoin, Ethereum, or Cosmos. Only those three are allowed
+	Done
+List:
+CryptoAlert-1 (Added Tue Apr 30 23:10:05 2019 +0800/Singapore Time)
