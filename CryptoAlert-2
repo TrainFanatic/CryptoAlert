@@ -44,11 +44,11 @@ Input either Bitcoin, Ethereum, or Cosmos
 eol
 
 read -p "What cryptocurrency do you want to view? ~" crypto_name
-./cryptoname-fetcher $crypto_name
+crypto_name=$(./cryptoname-fetcher $crypto_name)
 
 clear
 #read -p "Did you use an ID, a symbol, or a slug? ~" input_type #not needed (all is ID)
-curl -H "X-CMC_PRO_API_KEY:  $apiKey" -H "Accept: application/json" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=$crypto_name | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d"
+curl -H "X-CMC_PRO_API_KEY:  $apiKey" -H "Accept: application/json" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=$crypto_name | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d\|credit_count" 2>/dev/null
 
 fi
 #if ! (-e $(dirname $0)/Key)
