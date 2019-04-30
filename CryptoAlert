@@ -1,5 +1,5 @@
 #!/bin/sh
-#This is CryptoAlert. It gives you the info of cryptocurrencies. Look at README.md for info
+#This is CryptoAlert v0.0.5. It gives you the mostly accurate real-time info of cryptocurrencies. Look at README.md for info
 #Defining repeating functions (repeats if input not in correct format)
 #Define variables
 curdir=$(dirname $0)
