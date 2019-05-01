@@ -4,5 +4,5 @@ CryptoAlert-0.0.2.tar.gz (23 April, 2019 20:04:30)
 CryptoAlert-0.0.3.tar.gz (30 April, 2019 17:25:58)
 CryptoAlert-0.0.4.tar.gz (30 April, 2019 21:33:58)
 	This is the first functional version
-
+CryptoAlert-0.0.5.tar.gz (Tue Apr 30 23:16:53 2019 +0800/Singapore Time)
 
