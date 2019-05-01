@@ -1,0 +1,14 @@
+AS OF 1 MAY, 2019, HERE IS THE CHANGELOG
+
+Wednesday April 30, 2019
+	-Added the ability to search up any crypto on coinmarketcap
+	-Key now saved by program
+CryptoAlert 0.0.4
+––––––––––––––––––––––––––––––––––––––––––––
+*NOTE*
+Versions 0.0.2 and 0.0.3 were very buggy and should not be used.
+*INSERT 0.0.2 and 0.0.3 here*
+––––––––––––––––––––––––––––––––––––––––––––
+Sat Apr 20, 2019
+Created functional program.
+CryptoAlert 0.0.1

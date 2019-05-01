@@ -1,0 +1,82 @@
+~CHANGELOG~ for CryptoAlert
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 20:58:48 2019 +0800
+Comments: Added 'CryptoAlert-0.0.1.tar.gz' in new Tarballs folder
+    Tarball for installation and homebrew
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Branched to origin/TrainFanatic-hard-to-use (Stale branch, closed)
+Date:   Sat Apr 20 19:00:17 2019 +0800
+Comments:
+    Fixed silly mistake
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 18:59:27 2019 +0800
+Comments:
+    Fixed more mistakes
+	Ahh I sure am dumb
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 18:56:18 2019 +0800
+Comments:
+    Fixed silly mistakes
+	(e.g forgetting to put in square brackets in for statements
+	and mistaking assignment (=) with equality (==)
+	I'm such a noob
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 18:50:31 2019 +0800
+Comments:
+    Stabilized CryptoViewer
+	(Isn't it CryptoAlert?)
+    Less crashing and a little more user-friendliness
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 18:44:13 2019 +0800
+Comments:
+    Update CryptoAlert
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 18:36:47 2019 +0800
+Comments: edit CryptoAlert
+    Actually works now
+It only accepts three(3) cryptos for the moment, however. They are BTC, ETH, and ATOM (Cosmos)
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 18:36:22 2019 +0800
+Comments: Create cryptolist
+    List of all crypto currencies as of 20 April 2019
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 17:35:12 2019 +0800
+Comments: edit CryptoAlert
+    Created backbone (still does not work)
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 16:08:31 2019 +0800
+Comments: Create CryptoAlert
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat Apr 20 16:00:02 2019 +0800
+Comments: Initial Commit
+Added README.md and LICENCE (GNU)
+
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
+ ___________________________
+< You have reached the end! >
+ ---------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+(Generated using cowsay, another wonderful command)
