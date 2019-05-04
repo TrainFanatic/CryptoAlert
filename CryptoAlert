@@ -10,7 +10,7 @@ read -sn1 api_id_input
 case $api_id_input in
 y) no_api_id_presence=false ;;
 n) no_api_id_presence=true ;;
-*) clear; echo "Your input was neither y or n. Please try again"; api_id_ask ;;
+*) clear; echo "Your input was neither y or n. Please try again"; is_api_present ;;
 esac
 }
 
@@ -63,7 +63,7 @@ Input the name of the coin (e.g Bitcoin, Ethereum, Dent, Cosmos)
 eol
 
 read -p "What cryptocurrency do you want to view? ~" crypto_name
-crypto_name=$(./cryptoname-fetcher $crypto_name)
+crypto_name=$("$curdir""/cryptoname-fetcher" $crypto_name)
 
 clear
 #read -p "Did you use an ID, a symbol, or a slug? ~" input_type #not needed (all is ID)
