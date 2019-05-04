@@ -1,82 +1,355 @@
-~CHANGELOG~ for CryptoAlert
+commit 06d55e76b8016202ca215c831fd8b7dd36c7d1f2
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 2 07:39:07 2019 +0800
+
+    Minor changes to README
+
+commit ea4bdeddb05a724e98a8ba8fbdd3f53f10c88b37
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 2 07:35:44 2019 +0800
+
+    Added date to 0.0.6 on List
+
+commit 1e8ca02aa01aa70833fad2cd3c1346ca5069d962
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 2 07:33:53 2019 +0800
+
+    Added 0.0.6 Tarball
+
+commit 08b8841a7fc0a979339c3b790d89edae64138fb6
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 2 07:29:43 2019 +0800
+
+    MOVED id-name pair creator to Dependencies
+
+commit 1a4cd43d9e491f064899f0bbdb2b82c23b3acd83
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 2 07:27:56 2019 +0800
+
+    More notes in README.md
+
+commit 118b15daeecc7ec73b773ee8df69e20d5061095f
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 1 20:08:28 2019 +0800
+
+    Moved raw list to Not Utilised and removed lists that are not complete
+
+commit 0bd5d2482a79333abcc0fb049f7568c2372c62e9
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 1 20:04:53 2019 +0800
+
+    Added more helpful info on README.md
+
+commit 01519195abaf73bf6a581624b243638208340b27
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 1 20:00:04 2019 +0800
+
+    Fixed issue of constant crashing
+
+commit e843e3ab003c7761fd1e4d847c671f4fb08f7a63
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 1 19:40:12 2019 +0800
+
+    Fixed issue with multiple instances of Ethereum crashing executable
+
+commit 49b68b3fb01ede6c6568538beea46d29926db0ea
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 1 19:24:22 2019 +0800
+
+    git log file and CHANGELOG
+
+commit f69338763f4a8c221c533f81c519555585018ad1
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 1 19:22:53 2019 +0800
+
+    Made changelog and LOG which is aall commits. Added 0.0.4 to Tarball List
+
+commit b1fbe3939f980218bf73bda715526c95963901a0
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 23:16:53 2019 +0800
+
+    Added v0.0.05 tarball and edited reader notes for CryptoAlert
+
+commit 612370221001444fe3b7003a9501dc26e41fe257
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 23:11:48 2019 +0800
+
+    Made Notes file
+
+commit 178f9bd55d4533b89d2f8d615bb0f065fa26a7dd
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 23:10:05 2019 +0800
+
+    Edited more stuff like dialogue, changed CryptoAlert-2 to become the main CryptoAlert. Preserved original in Old Executables folder
+
+commit aaf0533abecc2a33af8a5d422216494c3f37c961
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 23:01:19 2019 +0800
+
+    Revert "Changed dialogue"
+    
+    This reverts commit 1114a4c90e729915eac4d2deb32f0717806240eb.
+
+commit 8eb174197dd8b778eb6fb6e6d508a72566c4ac57
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 22:58:19 2019 +0800
+
+    Replaced CryptoAlert with CryptoAlert-2
+
+commit 1114a4c90e729915eac4d2deb32f0717806240eb
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 22:54:23 2019 +0800
+
+    Changed dialogue
+
+commit e8cedd4698fe553b25a3a47be95a0a45a13b4f03
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 22:49:49 2019 +0800
+
+    Added in AutoFilling for API Key
+
+commit b1bff51e0231af31bf1b005bc5ccf7a8a6cb97d2
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 22:20:28 2019 +0800
+
+    Use Exclusive grep instead of normal grep
+
+commit 225b112b043a5b414f82edf55bcbd78c16ebce52
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 22:03:34 2019 +0800
+
+    Added reader notes and dates to List.txt
+
+commit 2602305271009587dd9b58b87dc5b45448ac030a
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 21:35:19 2019 +0800
+
+    Updated List.txt
+
+commit 61148c1da717c2a1c612eeb8ba2142b1c20fcbbc
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 21:33:58 2019 +0800
+
+    Added Tarball for finally working 0.0.4 version
+
+commit 0df5a452e7cbe16f042790b0f97496fa4d37cdc1
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 21:31:15 2019 +0800
+
+    Fixed a few bugs. Finally works now\!
+
+commit 4c99e622208d3255bb8929c7995b15e60e4d7bb5
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 21:16:03 2019 +0800
+
+    Works for the first time in half a month. Use filtered5 to create a (theoretically) working version of CryptoAlert. Current executable is stored inside \'CryptoAlert-2\'
+
+commit fb2fbaa0c0093b92a4fb429da7f9ec43d9c278e5
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 19:22:22 2019 +0800
+
+    Created Not Utilised folder and put all filtered lists that are not used in it
+
+commit 37784b0b9b2d8c51a43f51b1c082c4f4b3827443
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 19:18:10 2019 +0800
+
+    Created better filter files. Created Notes file for keeping track of breakthroughs and in general, notes
+
+commit 2e60e5d24b661b65ad20e3f9e757cfff0f10b1f2
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 17:27:40 2019 +0800
+
+    added 0.0.3 to list
+
+commit 6b8fd1f2e7df3d6193ad61faf44035d7ec09bf0f
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 17:25:58 2019 +0800
+
+    Added tarball for 0.0.3
+
+commit b4788e3bff42f6fa7087b879405457902eb97af8
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue Apr 30 17:13:18 2019 +0800
+
+    Worked on it. Just didn't commit
+
+commit e989de38c3cfeae35d6183eff9f8d4f32231332a
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat Apr 27 20:19:27 2019 +0800
+
+    Moved files that won't work to Stale Work folder
+
+commit 26dc6f46f47b6e6ecf423173069293f2259bdbf4
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat Apr 27 20:16:17 2019 +0800
+
+    Note: It doesn't seem like this is going to work anytime soon. Fixed some looming mistakes but it STILL does not work
+
+commit dd01fd2edafb75325c2eb1d5a073d8db64958b62
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat Apr 27 17:16:50 2019 +0800
+
+    Oops! Silly mistake. Now, all round parntheses in if and while statements are replaced with SQUARE brackets
+
+commit 30c5feaa6ab076475691e1af00b01f329f71c005
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat Apr 27 17:12:39 2019 +0800
+
+    Put parantheses around if statement statements
+
+commit f8e1013f3e70340260e31df85cf40c155505425c
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat Apr 27 17:09:41 2019 +0800
+
+    Removed parantheses that may have been culprit of constant crashing that was at line 13
+
+commit 1f856114a4b952525a28baa34d3bd4883555b295
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu Apr 25 17:04:06 2019 +0800
+
+    added experimental verstion of CryptoAlert
+
+commit c0730601bc4b764aa88f84a729f7dc43fcb70f65
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu Apr 25 16:51:35 2019 +0800
+
+    Some comments
+
+commit ee4d6f50537a10f759e232928f0ecaa689ddb3e6
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu Apr 25 16:47:43 2019 +0800
+
+    Worked on the cryptoname fetcher
+
+commit ef3ee4a76cb9b5166830eae02753b4df79153c9e
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu Apr 25 07:45:12 2019 +0800
+
+    Created fetcher
+
+commit e0fdb9267439d454b48cde41cfc8275200971428
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed Apr 24 15:32:37 2019 +0800
+
+    Minor changes
+
+commit 8941f1cb888d56f43ba52c74cc7b65a13f2a9a8b
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Wed Apr 24 07:32:37 2019 +0800
+
+    Made a filtered cryptolist, where all data that is not needed (historical data etc.) is removed
+
+commit 2eaab014c7dc02c3d18a5f0509cd3360410ba9cc
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Tue Apr 23 20:27:20 2019 +0800
+
+    Updated Tarball List
+
+commit 63b0386731df9c04d65f3a6a5e21861198ccf107
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Tue Apr 23 20:21:55 2019 +0800
+
+    Bitcoin,Litecoin,Namecoin are added
+
+commit a2723632f47bb6c01e2518c59372d50fa0dcf7bf
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Tue Apr 23 20:12:26 2019 +0800
+
+    Changed name
+
+commit 80ae87400337e6b667af6e4caf0f121b0b6457c8
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Tue Apr 23 20:04:30 2019 +0800
+
+    Added 0.0.2
+
+commit ed963a923138d9f902a1b96354f1f0bfa5e515fa
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Tue Apr 23 16:26:44 2019 +0800
+
+    Made Dependencies folder and moved cryptocurrencies file to it
+
+commit 279333ef972dd825bda923416951ac60f3efd1b5
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Mon Apr 22 17:15:30 2019 +0800
+
+    Created List of all Tarballs
+
+commit 5240f0ca7400acb58194069ab78efe99005c131f
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Mon Apr 22 17:06:43 2019 +0800
+
+    Cleaned up CryptoAlert Code
+
+commit 7bf0f610ef32fa658012568f783afaa481937b34
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Mon Apr 22 16:55:51 2019 +0800
+
+    Edited cryptocurrencies list to order IDs from least to biggest
+
+commit afb12a331376cbf50f83fc94e92278e45d20d165
+Author: Christopher Ginting <christopherginting@Yoss-MacBook-Pro-2.local>
+Date:   Mon Apr 22 16:25:47 2019 +0800
+
+    Moved Tarball to Tarball folder
+
+commit d037b3e5a9761ac4f826961c2d931d4ac846bbbf
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Mon Apr 22 15:21:35 2019 +0800
+
+    Add files via upload
+
+commit 34b65b5319c30bf2a96d02cfe524322a8de3e549
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 20:58:48 2019 +0800
-Comments: Added 'CryptoAlert-0.0.1.tar.gz' in new Tarballs folder
+
     Tarball for installation and homebrew
 
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
-Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
-Branched to origin/TrainFanatic-hard-to-use (Stale branch, closed)
-Date:   Sat Apr 20 19:00:17 2019 +0800
-Comments:
-    Fixed silly mistake
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
+commit 1760c9b136522b4c7acc492afbaaa32857521abf
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 18:59:27 2019 +0800
-Comments:
-    Fixed more mistakes
-	Ahh I sure am dumb
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+    Fixed more mistakes
+
+commit 307c6872905a71a3537de63682264034c48ea424
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 18:56:18 2019 +0800
-Comments:
-    Fixed silly mistakes
-	(e.g forgetting to put in square brackets in for statements
-	and mistaking assignment (=) with equality (==)
-	I'm such a noob
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+    Fixed silly mistakes
+
+commit 9ab7ebc1b252ba124d7570adf817c97704206173
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 18:50:31 2019 +0800
-Comments:
+
     Stabilized CryptoViewer
-	(Isn't it CryptoAlert?)
-    Less crashing and a little more user-friendliness
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
-Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
-Date:   Sat Apr 20 18:44:13 2019 +0800
-Comments:
-    Update CryptoAlert
-
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+commit 0d5dca1ec0d006c7c262ec0e2d78743189f31a79
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 18:36:47 2019 +0800
-Comments: edit CryptoAlert
-    Actually works now
-It only accepts three(3) cryptos for the moment, however. They are BTC, ETH, and ATOM (Cosmos)
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+    Actually works now
+
+commit 2a4c71c276b1c591a9524d0b44f0387c07ee5e3e
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 18:36:22 2019 +0800
-Comments: Create cryptolist
+
     List of all crypto currencies as of 20 April 2019
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+commit cb3f45557bf5a5035fd60aac323969c11c7edc8b
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 17:35:12 2019 +0800
-Comments: edit CryptoAlert
+
     Created backbone (still does not work)
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  
+commit 89a1be7e0572e3404f2208b1651802d5e7b92dcf
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 16:08:31 2019 +0800
-Comments: Create CryptoAlert
 
-––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+    Create CryptoAlert
+
+commit 5b09cc4bb09f49f1405c82c25b59f7c5483bd5df
 Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
 Date:   Sat Apr 20 16:00:02 2019 +0800
-Comments: Initial Commit
-Added README.md and LICENCE (GNU)
 
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
- ___________________________
-< You have reached the end! >
- ---------------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-(Generated using cowsay, another wonderful command)
+    Initial commit
