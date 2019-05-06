@@ -21,4 +21,5 @@ The file filtered4 was made sheepishly (and sort of dumbly) by doing these two c
 	cat filtered4 | tr ' ' ':' > filtered5
 or similarly, instead of doing the second command (cat | tr)
 	tr ' ' ':' < filtered4 > filtered5
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
