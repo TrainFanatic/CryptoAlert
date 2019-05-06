@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -H "X-CMC_PRO_API_KEY:  $1" -H "Accept: application/json" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id="$2" | grep "price\|market_cap\|percent_change_1h\|percent_change_24h\|percent_change_7d\|credit_count" 2>/dev/null
