@@ -60,12 +60,14 @@ to isAPIPresent()
 			activate
 			open location "https://coinmarketcap.com/api/pricing/"
 		end tell
+		quit
 		return false
 	else if (apiIDPresence = {button returned:"What is an API ID?"}) then
 		tell application "Google Chrome"
 			activate
 			open location "https://coinmarketcap.com/api/pricing/"
 		end tell
+		quit
 	end if
 end isAPIPresent
 

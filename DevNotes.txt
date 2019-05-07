@@ -22,4 +22,21 @@ The file filtered4 was made sheepishly (and sort of dumbly) by doing these two c
 or similarly, instead of doing the second command (cat | tr)
 	tr ' ' ':' < filtered4 > filtered5
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+NOTE 2: HOW TO MAKE IT USR/BIN COMPATIBLE?
+It is possible to make the actual executable only contain the following:
+	osascript CryptoScript (The applescript)
+The name of this executable HAS to be 'cryptoalert' as we want it to be able to be executed from usr/bin
+You should be able to execute it like this after putting the executable, applescript, and dependencies into usr/bin
+	cryptoalert
 
+2a. Proposal for structure of Maker File
+It appears that the most popular way to do this is by using the GNU Make
+But for the sake of people that don't know that they have to open Terminal and cd to the directory and type in `make', just make an executable.
+i.
+	The executable must be Finder double-clickable.
+	It must not contain commands that are brew or mandatory-install.
+		like osascript, osacompile, bash built-ins, and echo (for user input)
+ii.
+It should go something like this:
+	Ask user for Desktop Application or command-line utility
+		if 
