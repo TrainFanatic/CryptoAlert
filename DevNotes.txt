@@ -21,7 +21,9 @@ The file filtered4 was made sheepishly (and sort of dumbly) by doing these two c
 	cat filtered4 | tr ' ' ':' > filtered5
 or similarly, instead of doing the second command (cat | tr)
 	tr ' ' ':' < filtered4 > filtered5
+END NOTE
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
 NOTE 2: HOW TO MAKE IT USR/BIN COMPATIBLE?
 It is possible to make the actual executable only contain the following:
 	osascript CryptoScript (The applescript)
@@ -39,4 +41,13 @@ i.
 ii.
 It should go something like this:
 	Ask user for Desktop Application or command-line utility
-		if 
+		if Application then
+			do osacompile -o ~/Desktop/CryptoAlert.app CryptoAlert
+			(This makes an application)
+		if command-line utility
+			either:
+				1) Have the old shell cryptoAlert and make THAT the executable
+				OR
+				2) Make a seperate executable which runs the applescript
+			(It appears option 1 is more favorable)
+
