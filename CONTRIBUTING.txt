@@ -1,1 +1,16 @@
+Hello there! Welcome CryptoAlert.
+
+This is a guide on how to contribute to this project
+1:What you need
+You will need a decent understanding of shell and AppleScript.
+If you have a better idea on the app then please do a pull request, people fluent in all languages are also welcome
+2:Pull requests
+When contributing, make a pull request with your username, and commit name. It should look something like this:
+	TrainFanatic-AppleScript.
+If there happens to be a pull request with the same name (which will probably not happen) then just add a number at the end like so:
+	TypicalGuy-Bugfixes-2
+3:What can I do?
+Check the issues section, if there is something to do, work on that issue
+
+If you have any questions, please contact: onetrainfanatic@gmail.com
 
