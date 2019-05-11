@@ -1,12 +1,12 @@
 #!/bin/bash
 #AppleScript application
 function application-make {
-echo "osacompile -o $1 CryptoAlert.applescript"
+osacompile -o $1 CryptoAlert.applescript
 #insert photo (.icns) insertion
 }
 #command line cryptoalert
 function prompt-make {
-echo "cp Old\ Executables/CryptoAlert-2 /usr/bin/cryptoalert"
+cp Old\ Executables/CryptoAlert-2 /usr/bin/cryptoalert
 }
 
 case $1 in
