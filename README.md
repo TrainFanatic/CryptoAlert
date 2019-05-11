@@ -16,8 +16,8 @@ You will also **need** an internet connection
 ```git clone http://github.com/TrainFanatic/CryptoAlert ~/Desktop/CryptoAlert```
 2. Go to the CryptoAlert directory
 ```cd ~/Desktop/CryptoAlert```
-3. Run Makefile. NOTE: Do NOT do the GNU make command on this folder, even though the file is called 'Makefile'
-```./Makefile```
+3. Run the 'make' file. NOTE: Do NOT do the GNU make command on this folder, even though the file is called 'make'
+```./make```
 4. Follow the instructions given by the executable
 5. You're ready to roll!
 
