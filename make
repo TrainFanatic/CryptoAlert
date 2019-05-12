@@ -4,6 +4,10 @@ function application-make {
 osacompile -o $1 CryptoAlert.applescript
 #insert photo (.icns) insertion
 }
+#Find current shell (certain shells like fish do not return any info with echo $0)
+function get-shell {
+ps | head -2 | tail -1 | cut -d " " -f 7 | tr '-' '\0'
+}
 #command line cryptoalert
 function prompt-make {
 cp Old\ Executables/CryptoAlert-2 /usr/bin/cryptoalert
