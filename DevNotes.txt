@@ -1,3 +1,10 @@
+Hi there. This is TrainFanatic.
+I'm at school most of the time. So please, do not email me during these times:
+Monday-Friday 8:10AM-3:00PM
+But anyway, here's my email:
+onetrainfanatic@gmail.com
+
+
 NOTE 1: USING THE PASTE UTITLITY TO MAKE LIFE EASIER
 Here are some notes:
 Using the `paste' ability, I was able to turn file filtered3 into file filtered5
@@ -50,4 +57,27 @@ It should go something like this:
 				OR
 				2) Make a seperate executable which runs the applescript
 			(It appears option 1 is more favorable)
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+NOTE 3: THE UNFAIRNESS OF USR/BIN
+It (does not appear) that it is possible to make transport an executable straight into USR/BIN. It is, though, possible to create an executable at ~/bin, and edit .bashrc or any rc file to add ~/bin to $PATH before running
+
+Suggested code
+
+NOTE: SOME SHELLS, LIKE FISH, DO NOT RETURN ANYTHING WITH $0. `echo $0' RETURNS NOTHING
+	
+	shellfetcher
+		ps | head -2 | tail -1 | cut -d " " -f 7 | tr '-' '\0'
+		#This finds current shell and removes all dashes (-)
+	installer
+		if [ -f ~/bin ]
+		then
+		return 0
+		else
+		mkdir ~/bin
+		fi
+		cp Old\ Executables/CryptoAlert-2 ~/bin/cryptoalert
+		#Create ~/bin if doesn't exist, and creates cryptoalert
+		#import cryptoalert
+		..do something based off of shell. Not all shells have (shell)rc. FISH has a completely different address for that..
 
