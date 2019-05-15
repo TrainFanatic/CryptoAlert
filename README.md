@@ -8,7 +8,7 @@ You will also **need** an internet connection
 
 - [Installation](#Installation)
 - [Usage](#Usage)
-
+- [Contacts](#Contacts)
 <!-- tocstop -->
 
 ## Installation
@@ -25,3 +25,9 @@ You will also **need** an internet connection
 If you have created the application, then just run the Application by double-clicking it on your Desktop.
 If you created the command-line executable, then just run it like this.
 ```cryptoalert```
+
+## Contacts
+GitHub email:
+
+```onetrainfanatic@gmail.com```
+
