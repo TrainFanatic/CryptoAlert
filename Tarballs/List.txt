@@ -10,4 +10,5 @@ CryptoAlert-0.0.6.tar.gz (Thu May 2 07:33:53 2019 +0800/Singapore Time)
 CryptoAlert-0.0.7.tar.gz (Sat May 11 19:12:26 2019 +0800/Singapore Time)
 	Added make and much, much more
 	Tarball size exceeds 90 MB
-
+CryptoAlert-0.1.0.tar.gz (Sat May 18 21:13:17 2019 +0800/Singapore Time)
+	Fully independent (works almost perfectly using the instructions)
