@@ -63,7 +63,7 @@ Input the name of the coin (e.g Bitcoin, Ethereum, Dent, Cosmos)
 eol
 
 read -p "What cryptocurrency do you want to view? ~" crypto_name
-crypto_name=$("$curdir""/cryptoname-fetcher" $crypto_name)
+crypto_name=$("$curdir""/cryptoname" $crypto_name)
 
 clear
 #read -p "Did you use an ID, a symbol, or a slug? ~" input_type #not needed (all is ID)
