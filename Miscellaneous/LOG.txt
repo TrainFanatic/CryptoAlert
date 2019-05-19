@@ -1,3 +1,201 @@
+commit ca2a65f132e2f4ba790abf8842f6ef5bbbcec440
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sun May 19 09:43:06 2019 +0800
+
+    Minor changes to not copy files to /etc
+
+commit d94909effb312af08fbe5d99eb1e6a2706fd3983
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sun May 19 09:40:42 2019 +0800
+
+    Minor changes
+
+commit 35ddcb17f6e1d5b2fc26639930aebc350e400d4d
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 18 21:16:17 2019 +0800
+
+    Removed all tar ruckus and added 0.1.0 to list😝
+
+commit d359b619de1da04fa0fea783c2f1464acd1f29ff
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 18 21:13:17 2019 +0800
+
+    Added 0.1.0 tarball
+
+commit 16ec3f7505867dfaf028fb60d2afe90ad4c2233c
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 18 19:17:53 2019 +0800
+
+    Finally COMPLETELY works. Welcome to CryptoAlert v0.1.0!
+
+commit 7d412929bfcd6fd2ece9e9c2a8150168049e112e
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 15 17:45:47 2019 +0800
+
+    Added email to README.md
+
+commit 69d4e1d2c5c95348d864cd6a5aedb5aca69f6050
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Mon May 13 16:45:47 2019 +0800
+
+    0.0.7 tar and more Devnotes
+
+commit 09e3cf73392865b739d20072b49017487cea65ef
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Mon May 13 07:27:33 2019 +0800
+
+    realized 2 things. 1. make cannot access /usr/bin. 2. This means that they have to be kept at ~/bin and the _rc file must be config'd. Most shells follow the SHELLrc pattern, but there are exceptions like FISH where they are kept at totally different places on the Desktop
+
+commit dd9b75118471e7d6819c3980ecfd119a548fc8b3
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 19:15:13 2019 +0800
+
+    Edit List
+
+commit 1bb33dff15869ff17b10f8b877904fb3504322a2
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 19:12:26 2019 +0800
+
+    Added 0.0.7 to Tarballs
+
+commit c737075e01420809d049806a6d0bc22ec306a440
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 19:09:24 2019 +0800
+
+    Edit README.md
+
+commit 9fd4e5ffb3e4274b2a80ff0d4903b72bfc948419
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 19:08:21 2019 +0800
+
+    Moved Makefile to make to avoid confusion
+
+commit 673155b0ceb251300bf5e3405ac9b816fb735b81
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 19:06:26 2019 +0800
+
+    Better README.md
+
+commit f9dfea96a99d51eaef0d044a16e7473eb35b2a3d
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 17:57:50 2019 +0800
+
+    ACTUALLY works now
+
+commit a281d4b349a8c72327d6fa964e644fd50b027fed
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 17:54:46 2019 +0800
+
+    Working Makefile
+
+commit e6120c20322990f7b80244624fb7e44e0633ace7
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 16:17:56 2019 +0800
+
+    Updated Contributing guidelines
+
+commit f74626f5b105fb443e2f05082f42f658f39611d7
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 11 15:58:26 2019 +0800
+
+    Contributing guidelines
+
+commit c93fd72b896590cc52915a47fe32c4bb10b9c7a7
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat May 11 15:40:44 2019 +0800
+
+    Rename CONTRIBUTING.md to CONTRIBUTING.txt
+
+commit 7000e3b264d762af7c3e08c476d2c144dd90cb35
+Author: TrainFanatic <39767152+TrainFanatic@users.noreply.github.com>
+Date:   Sat May 11 15:40:15 2019 +0800
+
+    Create CONTRIBUTING.md
+
+commit 2ba3cadb70078495925163870f8134d690d1b646
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 9 16:41:53 2019 +0800
+
+     Applescript suffix
+
+commit 6d944cb1a2c45700c1ad9f20f52659d30035bdd8
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Thu May 9 16:38:56 2019 +0800
+
+    Applescript suffix
+
+commit ce79e8578012cdc9033e7ad8bf82198418335709
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Wed May 8 21:34:46 2019 +0800
+
+    Notes and plans. At school and studying so I can't really work on it
+
+commit 171e381954c0baba9c510fc8bf609928be7d321e
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Tue May 7 17:08:43 2019 +0800
+
+    Added more notes
+
+commit 5f51140885a63fd3a95cd83ea0a43a86717fc203
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Mon May 6 17:05:45 2019 +0800
+
+    Removed app. There is still the applescript source code
+
+commit 401b3b3baa63a7b04c457bb5380fe389e2367498
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Mon May 6 17:00:19 2019 +0800
+
+    Added AppleScript source code
+
+commit 5cd4585155e6b867cb2696a8416a4dc9501ea8e8
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Mon May 6 16:50:08 2019 +0800
+
+    Added get-crypto for smoother app usage
+
+commit 22aeb6430a8b3f7d64c4f819b909ee459e790da1
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Mon May 6 16:28:42 2019 +0800
+
+    Finally works, not yet source code tho cos it contains an application
+
+commit a9a10cbdb63640559b4f35b63238851c5267e0b0
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sun May 5 19:48:31 2019 +0800
+
+    added more
+
+commit 1e3e3effd59acbe3155f7324a9f3c8250ada3f89
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sun May 5 18:56:19 2019 +0800
+
+    Added new application
+
+commit d86f186afe13dd7573a75dddb0757bed590b527a
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sun May 5 15:38:16 2019 +0800
+
+    Added non-applescript CryptoAlert that already has full functionality
+
+commit d23b49ba3af3d9a848210963de6f9a30bf52c354
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sun May 5 15:36:12 2019 +0800
+
+    Modded CryptoAlert
+
+commit 9ba9cbf91e0795cd4707af5cfcc2891930cd2a74
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 4 17:21:49 2019 +0800
+
+    Fixed minor bugs
+
+commit 57e67484d9efe4a9da0380a54af950252a23cd19
+Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
+Date:   Sat May 4 13:02:35 2019 +0800
+
+    Completed log file
+
 commit 06d55e76b8016202ca215c831fd8b7dd36c7d1f2
 Author: Christopher Ginting <christopher.adiguna.ginting@gmail.com>
 Date:   Thu May 2 07:39:07 2019 +0800
