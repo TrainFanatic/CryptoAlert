@@ -43,7 +43,7 @@ fi;;
 "-p") prompt-make; chmod +x ~/bin/cryptoalert; echo "Please restart your shell";;
 *) echo -e "This is help for the Maker FILE for CryptoAlert\n-a [address]: Create an application at [address]. If not specified, will build an application at ~/Desktop/CryptoAlert.app\n\n-p: Creates a command situated at /usr/bin/cryptoalert. Can be run by simply typing 'cryptoalert' in prompt";;
 esac
-if [ "$apparea" != "default" ]
+if [ "$apparea" != "default" -a "$apparea" ]
 then
 cp cryptoname-fetcher "$2""/Contents/Resources/"
 cp Dependencies/filtered "$2""/Contents/Resources/"
