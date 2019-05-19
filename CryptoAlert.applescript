@@ -72,43 +72,49 @@ to isAPIPresent()
 end isAPIPresent
 
 --Once all has been done, does the user have a saved key? If not, do you want to save the key?--
-to detectKey()
-	set keyPresence to do shell script "if [ -e ./.Key ]; then echo 'There is a Key'; else echo 'There is no key'; fi"
-	if (keyPresence = "There is a Key") then
-		return true
-	else if (keyPresence = "There is no Key") then
-		return false
-	else
-		error number -50
-		--error -2742 produces error "Way too long, dude."--
-	end if
-end detectKey
+to makeKey(thatkey, dirname)
+	do shell script "echo " & thatkey & " > " & dirname & "/.Key"
+end makeKey
 --Asks user for API ID key--
 to getKey()
 	set theKey to display dialog "Please paste your coinmarketcap API ID" default answer "" buttons {"Cancel", "Continue"} default button "Continue" with hidden answer
 	set filtered1 to replaceText(theKey, "{", "")
 	return replaceText(filtered1, "Continue", "") --returns password only--
 end getKey
-to saveKey(theKey)
-	do shell script "touch .Key"
-	writeTextToFile(theKey, ".Key", true)
-end saveKey
 --What crypto do you want?--
 to askCrypto()
 	set theCrypto to display dialog "What Cryptocurrency do you want to view?" default answer "" buttons {"Cancel", "Continue"} default button "Continue"
 	set filtered1 to replaceText(theCrypto, "{", "")
 	return replaceText(filtered1, "Continue", "") --returns password only--
 end askCrypto
+-- Do you want to try again? --
+to tryAgain()
+	set rawIf to display dialog "Do you want to go again?" buttons {"Cancel", "Continue"} default button "Continue"
+	set filtered1 to replaceText(rawIf, "{", "")
+	return filtered1
+end tryAgain
+
 --Code Here--
-detectKey()
+set theAddress to do shell script "find ~/Desktop -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
+set dirnameAddress to do shell script "dirname " & theAddress
 if (isAPIPresent() = true) then
 	set theKey to getKey()
 	set theCrypto to askCrypto()
-	set theAddress to do shell script "find ~/Desktop -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
-	set dirnameAddress to do shell script "dirname " & theAddress
-	set cryptoNameFiltered to do shell script theAddress & " " & theCrypto & " applescriptaccess20A-P718HQ"
+	set cryptoNameFiltered to do shell script theAddress & " " & theCrypto
 	--display dialog theCommand
 	set theData to do shell script dirnameAddress & "/get-crypto " & theKey & " " & cryptoNameFiltered
 	display dialog theData
+	repeat while (tryAgain() is equal to "Continue")
+		set theKey to getKey()
+		set theCrypto to askCrypto()
+		set theAddress to do shell script "find ~/Desktop -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
+		set dirnameAddress to do shell script "dirname " & theAddress
+		set cryptoNameFiltered to do shell script theAddress & " " & theCrypto
+		--display dialog theCommand
+		set theData to do shell script dirnameAddress & "/get-crypto " & theKey & " " & cryptoNameFiltered
+		display dialog theData
+	end repeat
+	-- Does user have saved key at *.app/Contents/Resources/.Key? --
+	makeKey(theKey, dirnameAddress)
 end if
 
