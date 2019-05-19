@@ -104,14 +104,9 @@ detectKey()
 if (isAPIPresent() = true) then
 	set theKey to getKey()
 	set theCrypto to askCrypto()
-	display alert "May take a long time" message "This process may take a long time. Anywhere between 10 and 30 seconds. Please do not exit the application until another text box appears" as critical buttons {"Continue", "Cancel"} default button "Continue" cancel button "Cancel"
-	set theAddress to do shell script "find / -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
+	set theAddress to do shell script "find ~ -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
 	set dirnameAddress to do shell script "dirname " & theAddress
-	set fetcherAddress to dirnameAddress & "/cryptoname-fetcher"
-	display dialog fetcherAddress
-	set cryptoNameFiltered to do shell script fetcherAddress & " " & theCrypto
-	display dialog "The ID of " & theCrypto & " is " & cryptoNameFiltered -- (This prints inputted crypto and it's corresponding ID)
-	
+	set cryptoNameFiltered to do shell script theAddress & " " & theCrypto & " applescriptaccess20A-P718HQ"
 	--display dialog theCommand
 	set theData to do shell script dirnameAddress & "/get-crypto " & theKey & " " & cryptoNameFiltered
 	display dialog theData

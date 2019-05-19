@@ -33,9 +33,22 @@ case $1 in
 "-a") if [ $2 ]
 then 
 application-make $2
+sleep 1
+apparea=$2
 else 
 application-make ~/Desktop/CryptoAlert.app
-fi ;;
+sleep 1
+apparea="default"
+fi;;
 "-p") prompt-make; chmod +x ~/bin/cryptoalert; echo "Please restart your shell";;
 *) echo -e "This is help for the Maker FILE for CryptoAlert\n-a [address]: Create an application at [address]. If not specified, will build an application at ~/Desktop/CryptoAlert.app\n\n-p: Creates a command situated at /usr/bin/cryptoalert. Can be run by simply typing 'cryptoalert' in prompt";;
 esac
+if [ "$apparea" != "default" ]
+then
+cp cryptoname-fetcher "$2""/Contents/Resources/"
+cp Dependencies/filtered "$2""/Contents/Resources/"
+elif [ "$apparea" ]
+then
+cp cryptoname-fetcher "/Users/$(whoami)/Desktop/CryptoAlert.app/Contents/Resources/"
+cp Dependencies/filtered "/Users/$(whoami)/Desktop/CryptoAlert.app/Contents/Resources/"
+fi
