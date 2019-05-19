@@ -1,3 +1,4 @@
 #!/bin/bash
 curdir=$(dirname $0)
+filt="$curdir/filtered"
 cat $filt | grep -w $1 | head -1 | cut -d ":" -f1

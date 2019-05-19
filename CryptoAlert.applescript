@@ -104,7 +104,7 @@ detectKey()
 if (isAPIPresent() = true) then
 	set theKey to getKey()
 	set theCrypto to askCrypto()
-	set theAddress to do shell script "find ~ -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
+	set theAddress to do shell script "find ~/Desktop -iname 'cryptoname-fetcher' 2>/dev/null | head -1 "
 	set dirnameAddress to do shell script "dirname " & theAddress
 	set cryptoNameFiltered to do shell script theAddress & " " & theCrypto & " applescriptaccess20A-P718HQ"
 	--display dialog theCommand

@@ -47,8 +47,10 @@ if [ "$apparea" != "default" -a "$apparea" ]
 then
 cp cryptoname-fetcher "$2""/Contents/Resources/"
 cp Dependencies/filtered "$2""/Contents/Resources/"
+cp get-crypto "$2""/Contents/Resources/"
 elif [ "$apparea" ]
 then
 cp cryptoname-fetcher "/Users/$(whoami)/Desktop/CryptoAlert.app/Contents/Resources/"
 cp Dependencies/filtered "/Users/$(whoami)/Desktop/CryptoAlert.app/Contents/Resources/"
+cp get-crypto "/Users/$(whoami)/Desktop/CryptoAlert.app/Contents/Resources/"
 fi
