@@ -44,7 +44,7 @@ But for the sake of people that don't know that they have to open Terminal and c
 i.
 	The executable must be Finder double-clickable.
 	It must not contain commands that are brew or mandatory-install.
-		like osascript, osacompile, bash built-ins, and echo (for user input)
+		It may contain things like osascript, osacompile, bash built-ins, and echo/read (for user input)
 ii.
 It should go something like this:
 	Ask user for Desktop Application or command-line utility
@@ -81,3 +81,4 @@ NOTE: SOME SHELLS, LIKE FISH, DO NOT RETURN ANYTHING WITH $0. `echo $0' RETURNS 
 		#import cryptoalert
 		..do something based off of shell. Not all shells have (shell)rc. FISH has a completely different address for that..
 
+THIS PROBLEM HAS BEEN SOLVED AND IMPLEMENTED INTO MAKE
