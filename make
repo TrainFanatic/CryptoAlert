@@ -16,7 +16,7 @@ cat $filt5 | grep -w $1 | head -1 | cut -d: -f1
 }
 #command line cryptoalert
 function prompt-make {
-cp Old\ Executables/CryptoAlert-2 ~/bin/cryptoalert
+cp sh/CryptoAlert-2 ~/bin/cryptoalert
 cp Dependencies/filtered ~/bin/filtered
 cp cryptoname-fetcher ~/bin/cryptoname
 if [ "$shellname" == "fish" ]
